@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <div class="panel arabic" id="panel">
+   
+        <div class="text">
+            <h2>يمكنك التواصل معي عن طريق <span>     <i class="uil uil-multiply" id="close"></i></span></h2>
+            <i class="uil uil-instagram-alt"></i>
+            <i class="uil uil-facebook"></i>
+        </div>
+    </div>
+    <span class="scroller" id="scroller"></span>
+    <div class="panel arabic">
+   
+        <div class="text">
+            <h2>يمكنك التواصل معي عن طريق <span>     <i class="uil uil-multiply" id="close"></i></span></h2>
+            <i class="uil uil-instagram-alt"></i>
+            <i class="uil uil-facebook"></i>
+        </div>
+    </div>
+    <span class="scroller" id="scroller"></span>
+    <header>
+        
+        <div class="container">
+            <h2> Jamal Mohafil </h2>
+            <nav id="nava">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">Portifolio</a></li>
+                </ul>
+                <a href="#" class="btn btn-primary" id="contact">Contact</a>
+
+            </nav>
+            <div id="bars">        <i class="uil uil-bars" id="bar"></i>
+            </div>
+        </div>
+
+    </header>
+<section class="hero">
+    <div class="text">
+<h3>Hello</h3>
+<h2>I'm <span> Jamal Mohafil</span></h2>
+<h4>I'm a <span>web developer </span> </h4>
+<i class="uil uil-github"></i>
+<i class="uil uil-instagram-alt"></i>
+<i class="uil uil-facebook"></i>
+<i class="uil uil-youtube"></i>
+    </div>
+
+    <div class="images">
+            <img src="./logo.png" alt="">
+    </div>
+</section>
+<section class="services" id="ser">
+    <div class="cards">
+
+    </div>
+</section>
+    <div class="mo">
+        <div class="con">
+        <div class="line"></div>
+        <i class="uil uil-moon" id="night"></i>
+        <i class="uil uil-sun" id="moon"></i>
+    </div>
+    </div>
+    <script src="./main.js"></script>
+    <script>
+      var na = document.getElementById("nava")
+        var ba = document.getElementById("bar")
+        ba.addEventListener("click",()=>{
+    na.classList.toggle("show")
+
+})
+var con = document.getElementById("contact");
+con.addEventListener("click",()=>{
+    document.querySelector(".panel").classList.toggle("active")
+})
+document.getElementById("close").onclick = ()=>{
+    document.querySelector(".panel").classList.remove("active")
+}
+// var pan = document.getElementById("panel");
+// document.onclick = function(e) {
+//     if(e.target.id == "open") 
+//      pan.classList.toggle("active");
+//     else if (e.target.id == "close" || e.target.closest("#panel") == null)
+//      pan.classList.remove("active");
+// }
+    </script>
+
+</body>
+</html>
